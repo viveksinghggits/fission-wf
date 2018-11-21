@@ -12,7 +12,7 @@ tasks:
     run: secondgo
     inputs:
       headers:
-        OPFROMFIRST: "OPFROMFIRST"
+        OPFROMFIRST: "{$.Tasks.first.Output}" 
     requires:
     - first
 
